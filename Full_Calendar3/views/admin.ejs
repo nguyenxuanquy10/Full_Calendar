@@ -1,0 +1,489 @@
+<%- include('./partion/header.ejs') %>
+
+    <body data-topbar="dark">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="d-flex">
+
+                        <div class="dropdown d-inline-block d-lg-none ms-2">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Search Result">
+
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-none d-sm-inline-block">
+                            <div class="dropdown-menu dropdown-menu-end">
+
+                                <!-- item-->
+
+
+                                <!-- item-->
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
+                                    <img src="../../images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                            <div class="p-2">
+                                <div class="row g-0">
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="../../images/brands/github.png" alt="Github">
+                                            <span>GitHub</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="../../images/brands/bitbucket.png" alt="bitbucket">
+                                            <span>Bitbucket</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="../../images/brands/dribbble.png" alt="dribbble">
+                                            <span>Dribbble</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row g-0">
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="../../images/brands/dropbox.png" alt="dropbox">
+                                            <span>Dropbox</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="../../images/brands/mail_chimp.png" alt="mail_chimp">
+                                            <span>Mail Chimp</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="../../images/brands/slack.png" alt="slack">
+                                            <span>Slack</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item bg-soft-light border-start border-end" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="../../images/users/avatar-1.jpg"
+                                alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium">HIT</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="http://localhost:3000/admin/login"><i class="mdi mdi-face-profile font-size-16 align-middle me-1"></i>Đăng nhập</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:3000/admin/login"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Đăng xuất</a>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content" style="margin:0 0">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">Lịch</h4>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-grid">
+                                                <button class="btn font-16 btn-primary" id="btn-new-event"><i class="mdi mdi-plus-circle-outline"></i> 
+                                                    Đặt phòng
+                                                </button>
+                                            </div>
+
+                                            <div id="external-events" class="mt-2">
+                                                <br>
+
+                                            </div>
+
+                                            <div class="row justify-content-center mt-5">
+                                                <div class="col-lg-12 col-sm-6">
+                                                    <img src="../../images/undraw-calendar.svg" alt="" class="img-fluid d-block">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col-->
+
+                                <div class="col-xl-9 col-lg-8">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div id="calendar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+
+                            </div>
+
+                            <div style='clear:both'></div>
+
+
+                            <!-- Add New Event MODAL -->
+                            <div class="modal fade" id="event-modal" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header py-3 px-4 border-bottom-0">
+                                            <h5 class="modal-title" id="modal-title">Lớp</h5>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+
+                                        </div>
+                                        <div class="modal-body p-4">
+                                            <form class="needs-validation" name="event-form" id="form-event" novalidate>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Lớp</label>
+                                                            <input class="form-control" placeholder="Insert Event Name" type="text" name="title" id="event-title" required value="" />
+                                                            <div class="invalid-feedback">Please provide a valid event name</div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Category</label>
+                                                        <select class="form-control form-select" name="category" id="event-category">
+                                                                <option  selected> --Select-- </option>
+                                                                <option value="bg-danger">Danger</option>
+                                                                <option value="bg-success">Success</option>
+                                                                <option value="bg-primary">Primary</option>
+                                                                <option value="bg-info">Info</option>
+                                                                <option value="bg-dark">Dark</option>
+                                                                <option value="bg-warning">Warning</option>
+                                                            </select>
+                                                        <div class="invalid-feedback">Please select a valid event category</div>
+                                                    </div>
+                                                </div> -->
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Leader </label>
+                                                            <input class="form-control" placeholder="Insert user " type="text" name="title" id="event-user" required />
+                                                            <div class="invalid-feedback">Please provide a valid date end</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">SDT</label>
+                                                            <input class="form-control" placeholder="Insert phone number" type="text" name="title" id="event-phone" required />
+                                                            <div class="invalid-feedback">Please provide a valid date end</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Ngày</label>
+                                                            <input class="form-control" placeholder="Insert date " type="date" name="title" id="event-start" required value="" />
+                                                            <div class="invalid-feedback">Please provide a valid date start</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Ca</label>
+                                                            <select class="form-control form-select" name="category" id="event-time">
+                                                                <option  selected> Chọn ca </option>
+                                                                <option value="1">Ca sáng </option>
+                                                                <option value="2">Ca chiều</option>
+                                                                <option value="3">Ca tối</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">Please select a valid event category</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Phòng</label>
+                                                            <input class="form-control" placeholder="Nhập phòng " type="text" name="title" id="event-room" value="" />
+                                                            <div class="invalid-feedback">Please provide a valid date start</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-6">
+                                                        <button type="button" class="btn btn-danger" id="btn-delete-event">Xóa</button>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <button type="button" class="btn btn-light me-1" data-bs-dismiss="modal">Đóng</button>
+                                                        <button type="submit" class="btn btn-success" id="btn-save-event">Lưu</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- end modal-content-->
+                                </div>
+                                <!-- end modal dialog-->
+                            </div>
+                            <!-- end modal-->
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+
+        </div>
+        <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div data-simplebar class="h-100">
+                <div class="rightbar-title d-flex align-items-center bg-dark p-3">
+
+                    <h5 class="m-0 me-2 text-white">Theme Customizer</h5>
+
+                    <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                </div>
+
+                <!-- Settings -->
+                <hr class="m-0" />
+
+                <div class="p-4">
+                    <h6 class="mb-3">Layout</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
+                        <label class="form-check-label" for="layout-vertical">Vertical</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout" id="layout-horizontal" value="horizontal">
+                        <label class="form-check-label" for="layout-horizontal">Horizontal</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Layout Mode</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-light" value="light">
+                        <label class="form-check-label" for="layout-mode-light">Light</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-dark" value="dark">
+                        <label class="form-check-label" for="layout-mode-dark">Dark</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Layout Width</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-width" id="layout-width-fuild" value="fuild" onchange="document.body.setAttribute('data-layout-size', 'fluid')">
+                        <label class="form-check-label" for="layout-width-fuild">Fluid</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-width" id="layout-width-boxed" value="boxed" onchange="document.body.setAttribute('data-layout-size', 'boxed'),document.body.setAttribute('data-sidebar-size', 'sm')">
+                        <label class="form-check-label" for="layout-width-boxed">Boxed</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Layout Position</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-position" id="layout-position-fixed" value="fixed" onchange="document.body.setAttribute('data-layout-scrollable', 'false')">
+                        <label class="form-check-label" for="layout-position-fixed">Fixed</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-position" id="layout-position-scrollable" value="scrollable" onchange="document.body.setAttribute('data-layout-scrollable', 'true')">
+                        <label class="form-check-label" for="layout-position-scrollable">Scrollable</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Topbar Color</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-light" value="light" onchange="document.body.setAttribute('data-topbar', 'light')">
+                        <label class="form-check-label" for="topbar-color-light">Light</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-dark" value="dark" onchange="document.body.setAttribute('data-topbar', 'dark')">
+                        <label class="form-check-label" for="topbar-color-dark">Dark</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Size</h6>
+
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-default" value="default" onchange="document.body.setAttribute('data-sidebar-size', 'lg')">
+                        <label class="form-check-label" for="sidebar-size-default">Default</label>
+                    </div>
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-compact" value="compact" onchange="document.body.setAttribute('data-sidebar-size', 'md')">
+                        <label class="form-check-label" for="sidebar-size-compact">Compact</label>
+                    </div>
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-small" value="small" onchange="document.body.setAttribute('data-sidebar-size', 'sm')">
+                        <label class="form-check-label" for="sidebar-size-small">Small (Icon View)</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Color</h6>
+
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-light" value="light" onchange="document.body.setAttribute('data-sidebar', 'light')">
+                        <label class="form-check-label" for="sidebar-color-light">Light</label>
+                    </div>
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-dark" value="dark" onchange="document.body.setAttribute('data-sidebar', 'dark')">
+                        <label class="form-check-label" for="sidebar-color-dark">Dark</label>
+                    </div>
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-brand" value="brand" onchange="document.body.setAttribute('data-sidebar', 'brand')">
+                        <label class="form-check-label" for="sidebar-color-brand">Brand</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Direction</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-ltr" value="ltr">
+                        <label class="form-check-label" for="layout-direction-ltr">LTR</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-rtl" value="rtl">
+                        <label class="form-check-label" for="layout-direction-rtl">RTL</label>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!--Order event request-->
+        <table class="table table-striped  border border-gray " id="table-event" style="margin-left:25rem;width:73%">
+            <label class="" style="margin-left:25rem; font-size:1.5rem">Danh sách lịch đặt phòng</label>
+            <thead>
+                <tr>
+                    <th scope="col">Thứ tự</th>
+                    <th scope="col">Lớp</th>
+                    <th scope="col">Leader</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col">Ca</th>
+                    <th scope="col">Lưu</th>
+                    <th scope="col">Xóa</th>
+                    <th scope="col">Kiểm tra trùng lịch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% orderEvent.forEach((current,index)=> { %>
+                    <tr>
+                        <td>
+                            <%= index %>
+                        </td>
+                        <td>
+                            <%= current.title %>
+                        </td>
+                        <td>
+                            <%= current.user %>
+                        </td>
+                        <td>
+                            <%= current.phoneNumber %>
+                        </td>
+                        <td>
+                            <%= current.start.substring(5,10) %>
+                                (
+                                <%= parseInt(current.start.substring(12,15))+7 %>h -
+                                    <%= parseInt(current.end.substring(12,15))+7 %>h)
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-success btn-save-admin" value="<%= current._id %>">Lưu</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-warning" value="<%= current._id %>">Xóa</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-info" value="<%= current._id %>">Kiểm tra trùng lịch</button>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+        </table>
+
+    </body>
+
+    <%- include('./partion/footer.ejs') %>
